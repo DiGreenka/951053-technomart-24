@@ -9,6 +9,9 @@
   	<header class="main-header">
   		<b>Техномарт</b>
   		<div class="user-nav">
+        <form>
+          <input type="text" name="search" placeholder="Поиск:">
+        </form>
   			<ul class="user-nav-navigation">
   				<li class="user-nav-item"><a href="#">Закладки:</a></li>	
   				<li class="user-nav-item-select"><a href="#">Корзина:</a></li>
@@ -175,7 +178,13 @@
 		</div>
 	</footer>
 
-	<div class="cart-add"></div>
+	<div class="cart-add">
+    <button id="close-cart" class="close"></button>
+    <img src="img/form-1.svg">
+    <p class="cart-add-p">Товар добавлен в корзину</p>
+    <a class="button" href="#">Оформить заказ</a>
+    <button class="button-white" id="close-cart">Продолжить покупки</button>
+  </div>
 
   </body>
 </html>

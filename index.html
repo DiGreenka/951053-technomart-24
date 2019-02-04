@@ -9,6 +9,9 @@
   	<header class="main-header">
   		<b>Техномарт</b>
   		<div class="user-nav">
+  			<form>
+  				<input type="text" name="search" placeholder="Поиск:">
+  			</form>
   			<ul class="user-nav-navigation">
   				<li class="user-nav-item"><a href="#">Закладки:</a></li>	
   				<li class="user-nav-item"><a href="#">Корзина:</a></li>
@@ -59,8 +62,8 @@
   			<div class="container-info-contact">
   				<h3>Контакты</h3>
   				<p>Вы можете забрать товар сами, заехав в наш офис:</p>
-  				<img class="map" src="img/map.jpg">
-  				<a class="button" href="#">Заблудились? Напишите нам!</a>
+  				<button id="map"><img class="map" src="img/map.jpg"></button>
+  				<button id="write-us" class="button">Заблудились? Напишите нам!</button>
   			</div>
   		</section>
   	</main>
@@ -105,9 +108,26 @@
 		</div>
 	</footer>
 
-	<div class="map"></div>
+	<div class="map">
+		<img src="img/map.jpg">
+		<button id="close-map" class="close"></button>
+	</div>
 	
-	<div class="write-us"></div>
+	<div class="write-us">
+		<button id="close-write-us" class="close"></button>
+		<form>
+			<label>Ваше имя:
+				<input type="text" name="name" placeholder="Имя и фамилия">
+			</label>
+			<label>Ваш e-mail:
+				<input type="email" name="email" placeholder="email@example.com">
+			</label>
+			<label>Текст письма
+				<textarea placeholder="В свободной форме"></textarea>
+			</label>
+		</form>
+		<button class="button">Отправить</button>
+	</div>
 
   </body>
 </html>
