@@ -30,11 +30,19 @@ body {
 	background-color: #f1f5f7;
 }
 
+main::after {
+  content: "";
+  clear: both;
+  display: block;
+  height: 0;
+}
+
 /*ШАПКА 1 СЕКЦИЯ*/
 
 .header{
 	height: 260px;
 	width: 100%;
+	margin-bottom: 60px;
 }
 
 .main-header{
@@ -534,6 +542,377 @@ body {
 	font-family: "Cuprum";
 	font-size: 17px;
 	line-height: 17px;
+}
+
+/*Каталог*/
+
+.container{
+	background-color: #ffffff;
+}
+
+.container-content{
+	max-width: 940px;
+	margin: 0 auto;
+}
+
+/*Хлебные крошки и h1*/
+  
+.breadcrumbs{
+	padding: 0;
+	padding-top: 23px;
+	margin: 0;
+	height: 36px;
+}
+
+.link-item{
+	display: inline-block;
+	margin-left: 16px;
+}
+
+.link-item:first-child{
+	margin-left: 0;
+}
+
+.link-item a{
+	text-decoration: none;
+	color: #000000;
+	font-family: "PTSans";
+	font-size: 13px;
+	line-height: 18px;
+	text-transform: uppercase;
+}
+
+.category-title{
+	background-color: #f2f6f8;
+	font-family: "Cuprum";
+	font-size: 30px;
+	line-height: 30px;
+	color: #32425c;
+	padding: 33px 0 33px 33px;
+}
+
+/*Параметры*/
+
+.parameter{
+	float: left;
+	width: 220px;
+}
+
+.parameter-title{
+	font-family: "PTSans Bold";
+	font-size: 17px;
+	line-height: 30px;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.manufacturers{
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.manufacturers-item{
+	list-style-type: none;
+}
+
+.manufacturers-item label{
+	text-decoration: none;
+	color: #000000;
+}
+
+input.manufacturers-item{
+ 	display: none;
+}
+
+label.manufacturers-label{
+ 	cursor: pointer;
+ 	height: 23px;
+ 	margin-bottom: 16px;
+ 	position: relative;
+}
+
+.parameter-text{
+	position: absolute;
+	font-family: "PTSans";
+	font-size: 15px;
+	line-height: 20px;
+	text-transform: uppercase;
+	padding-top: 2px;
+}
+
+/*Checkbox OFF*/
+
+label.manufacturers-label::before{
+ 	content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><path fill="#c5c5c5" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/></svg>');
+ 	padding-right: 13px;
+}
+
+label.manufacturers-label:hover::before{
+	content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><path fill="#b5b5b5" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/></svg>');
+}
+
+input:disabled + label.manufacturers-label::before{
+	content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23"><path fill="#e9e9e9" d="M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z"/></svg>');
+}
+
+/*Checkbox ON*/
+
+input:checked + label.manufacturers-label::before{
+	content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23"><path fill="#c5c5c5" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/><path fill="#c5c5c5" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/></svg>');
+	padding-right: 9px;
+}
+
+input:checked + label.manufacturers-label:hover::before{
+	content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23"><path fill="#b5b5b5" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/><path fill="#b5b5b5" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/></svg>');
+	padding-right: 9px;
+}
+
+input:disabled:checked + label.manufacturers-label::before{
+	content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="27" height="23" viewBox="0 0 27 23"><path fill="#e9e9e9" d="M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z"/><path fill="#e9e9e9" d="M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z"/></svg>');
+	padding-right: 9px;
+}
+
+.power{
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.power-item{
+	list-style-type: none;
+}
+
+.power-item label{
+	text-decoration: none;
+	color: #000000;
+}
+
+input.power-item{
+ 	display: none;
+}
+
+label.power-label{
+ 	cursor: pointer;
+ 	height: 23px;
+ 	margin-bottom: 16px;
+ 	position: relative;
+}
+
+/*Radio OFF*/
+
+label.power-label::before{
+ 	content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"><path fill="#c5c5c5" d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"/></svg>');
+ 	padding-right: 10px;
+}
+
+label.power-label:hover::before{
+	content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"><path fill="#b5b5b5" d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"/></svg>');
+}
+
+input:disabled + label.power-label::before{
+	content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"><path fill="#e9e9e9" d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"/></svg>');
+}
+
+/*Radio ON*/
+
+input:checked + label.power-label::before{
+	content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"><path fill="#c5c5c5" d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"/><circle fill="#c5c5c5" cx="12.5" cy="12.5" r="4.5"/></svg>');
+}
+
+input:checked + label.power-label:hover::before{
+	content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"><path fill="#b5b5b5" d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"/><circle fill="#b5b5b5" cx="12.5" cy="12.5" r="4.5"/></svg>');
+}
+
+input:disabled:checked + label.power-label::before{
+	content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"><path fill="#e9e9e9" d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"/><circle fill="#e9e9e9" cx="12.5" cy="12.5" r="4.5"/></svg>');
+}
+
+.line{
+	height: 1px;
+	width: 100%;
+	background-color: #e5e5e5;
+	margin-top: 5px;
+	margin-bottom: 23px;
+}
+
+.btn-show{
+	margin-top: 35px;
+	width: 140px;
+	height: 38px;
+	background-color: transparent;
+	border: 1px solid #e5e5e5;
+	border-radius: 2px;
+	text-transform: uppercase;
+	font-family: "PTSans";
+	font-size: 13px;
+	line-height: 18px;
+	color: #000000;
+	cursor: pointer;
+}
+
+/*Каталог товаров*/
+
+.items{
+	width: 700px;
+	float: left;
+	margin-left: 20px;
+}
+
+.item{
+	width: 218px;
+	height: 318px;
+	float: left;
+	margin: 0 20px 20px 0;
+	border: 1px solid #e5e5e5;
+	text-align: center;
+}
+
+.item:nth-child(3n+3){
+	margin-right: 0;
+}
+
+.item:hover{
+	box-shadow: 0px 10px 25px 0px rgba(0,0,0,0.5);
+}
+
+.item-link{
+	text-decoration: none;
+}
+
+.new{
+	width: 0; 
+	height: 0;
+	border-top: 60px solid #ee3643;
+	border-left: 60px solid transparent;
+	float: right;
+	position: relative;
+	z-index: 2;
+}
+
+.new-white{
+	width: 0; 
+	height: 0;
+	border-top: 20px solid #ffffff;
+	border-left: 20px solid transparent;
+	float: right;
+	position: relative;
+	top: -60px;
+	z-index: 2;
+}
+
+.new-text{
+	color: #ffffff;
+	float: right;
+	position: relative;
+	top: -25px;
+	right: 10px;
+	z-index: 2;
+	transform: rotate(45deg);
+	font-family: "Cuprum";
+	font-size: 14px;
+}
+
+.item-img-1{
+	margin-bottom: 12px;
+	background: url(../img/perforator-1.jpg) no-repeat;
+	z-index: 1;
+	height: 170px;
+}
+
+.item-img-2{
+	margin-bottom: 12px;
+	background: url(../img/perforator-2.jpg) no-repeat;
+	z-index: 1;
+	height: 170px;
+}
+
+.item-img-3{
+	margin-bottom: 12px;
+	background: url(../img/perforator-3.jpg) no-repeat;
+	z-index: 1;
+	height: 170px;
+}
+
+.item-title{
+	width: 190px;
+	margin: 0 auto;
+	font-family: "PTSans Bold";
+	font-size: 18px;
+	line-height: 20px;
+	color: #000000;
+}
+
+.price{
+	font-family: "PTSans Bold";
+	font-size: 17px;
+	line-height: 18px;
+	color: #999999;
+	text-decoration: line-through;
+	margin: 0;
+	padding-top: 14px;
+	padding-bottom: 10px;
+}
+
+.discount-price{
+	width: 122px;
+	height: 38px;
+	background-color: #ee3643;
+	position: relative;
+	margin: 0 auto;
+}
+
+.discount-price:after{
+	content: "";
+	border-top: 19px solid transparent;
+	border-left: 19px solid #ee3643;
+	border-bottom: 19px solid transparent;
+	position: absolute;
+	left: 100%;
+	top: 0;
+}
+
+.discount-price p{
+	font-family: "PTSans Bold";
+	font-size: 17px;
+	line-height: 18px;
+	color: #ffffff;
+	position: absolute;
+	margin: 0;
+	top: 25%;
+	left: 25%;
+}
+
+.only-discount-price{
+	width: 122px;
+	height: 38px;
+	background-color: #ee3643;
+	position: relative;
+	margin: 0 auto;
+	margin-top: 42px;
+}
+
+.only-discount-price:after{
+	content: "";
+	border-top: 19px solid transparent;
+	border-left: 19px solid #ee3643;
+	border-bottom: 19px solid transparent;
+	position: absolute;
+	left: 100%;
+	top: 0;
+}
+
+.only-discount-price p{
+	font-family: "PTSans Bold";
+	font-size: 17px;
+	line-height: 18px;
+	color: #ffffff;
+	position: absolute;
+	margin: 0;
+	top: 25%;
+	left: 25%;
 }
 
 /*О компании*/
