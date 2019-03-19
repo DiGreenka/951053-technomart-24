@@ -55,9 +55,12 @@
   	<main class="container">
   		<section class="container-catalog">
   			<ul class="bread-crumbs">
-  				<li><a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="12" viewBox="0 0 15 12"><g fill="#C1C6CE"><path d="M3 8v4h4V8h2v4h4V8L8 3.516z"/><path d="M14.831 6.365L13 4.751V0h-2v2.987L8.332.635c-.02-.017-.043-.023-.064-.037a.465.465 0 0 0-.08-.047.551.551 0 0 0-.095-.024C8.062.521 8.032.515 8 .515c-.031 0-.061.006-.092.012a.46.46 0 0 0-.095.025c-.028.011-.053.029-.08.046-.021.014-.045.02-.064.037l-6.498 5.73a.501.501 0 0 0 .33.875.497.497 0 0 0 .331-.125L8 1.677l6.169 5.438a.501.501 0 0 0 .662-.75z"/></g></a></li><svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12"><path fill="#C1C6CE" d="M7.237 5.642L1.729.133a.506.506 0 1 0-.716.716L6.163 6l-5.151 5.15a.507.507 0 0 0 .716.717l5.509-5.509a.504.504 0 0 0 0-.716z"/></svg>
-  				<li><a href="">Каталог</a></li><svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12"><path fill="#C1C6CE" d="M7.237 5.642L1.729.133a.506.506 0 1 0-.716.716L6.163 6l-5.151 5.15a.507.507 0 0 0 .716.717l5.509-5.509a.504.504 0 0 0 0-.716z"/></svg>
-  				<li><a href="">Инструмент</a></li><svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12"><path fill="#C1C6CE" d="M7.237 5.642L1.729.133a.506.506 0 1 0-.716.716L6.163 6l-5.151 5.15a.507.507 0 0 0 .716.717l5.509-5.509a.504.504 0 0 0 0-.716z"/></svg>
+  				<li><a href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="12" viewBox="0 0 15 12"><g fill="#C1C6CE"><path d="M3 8v4h4V8h2v4h4V8L8 3.516z"/><path d="M14.831 6.365L13 4.751V0h-2v2.987L8.332.635c-.02-.017-.043-.023-.064-.037a.465.465 0 0 0-.08-.047.551.551 0 0 0-.095-.024C8.062.521 8.032.515 8 .515c-.031 0-.061.006-.092.012a.46.46 0 0 0-.095.025c-.028.011-.053.029-.08.046-.021.014-.045.02-.064.037l-6.498 5.73a.501.501 0 0 0 .33.875.497.497 0 0 0 .331-.125L8 1.677l6.169 5.438a.501.501 0 0 0 .662-.75z"/></g></svg></a></li>
+  				<li><svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12"><path fill="#C1C6CE" d="M7.237 5.642L1.729.133a.506.506 0 1 0-.716.716L6.163 6l-5.151 5.15a.507.507 0 0 0 .716.717l5.509-5.509a.504.504 0 0 0 0-.716z"/></svg></li>
+  				<li><a href="">Каталог</a></li>
+  				<li><svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12"><path fill="#C1C6CE" d="M7.237 5.642L1.729.133a.506.506 0 1 0-.716.716L6.163 6l-5.151 5.15a.507.507 0 0 0 .716.717l5.509-5.509a.504.504 0 0 0 0-.716z"/></svg></li>
+  				<li><a href="">Инструмент</a></li>
+  				<li><svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12"><path fill="#C1C6CE" d="M7.237 5.642L1.729.133a.506.506 0 1 0-.716.716L6.163 6l-5.151 5.15a.507.507 0 0 0 .716.717l5.509-5.509a.504.504 0 0 0 0-.716z"/></svg></li>
   				<li><a href="">Перфораторы</a></li>
   			</ul>
   			<div class="title-category">
@@ -160,7 +163,7 @@
 			  			<div class="full-price">30500 Р.</div>
 			  			<div class="discount-price"><p>25500 Р.</p></div>
 					</a>
-					<a href="" class="catalog-item">
+					<div class="catalog-item-select">
 						<div class="new-flex">
 			  					<div class="new"><p>new</p></div>
 			  			</div>
@@ -168,10 +171,12 @@
 				  			<button class="buy"><svg id="cart" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle cx="4.5" cy="13.5" r="1.5"/><circle cx="12.5" cy="13.5" r="1.5"/><path d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg><span>Купить</span></button>
 				  			<button class="favorite"><span>В закладки</span></button>
 				  		</div>
-			  			<h3 class="item-title">Перфоратор BOSCH <br>BFG 2000</h3>
-			  			<div class="full-price-hidden">12500 Р.</div>
-			  			<div class="discount-price"><p>12500 Р.</p></div>
-					</a>
+				  		<a class="item-bottom" href="#">
+				  			<h3 class="item-title">Перфоратор BOSCH <br>BFG 2000</h3>
+				  			<div class="full-price-hidden">12500 Р.</div>
+				  			<div class="discount-price"><p>12500 Р.</p></div>
+				  		</a>
+					</div>
 					<a href="" class="catalog-item">
 			  			<div class="photo-item-1"></div>
 			  			<h3 class="item-title">Перфоратор BOSCH <br>BFG 3000</h3>
@@ -275,7 +280,7 @@
 		<div class="add-cart">
 			<svg class="close-cart" enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" fill="#ee3643"/></svg>
 			<div class="add-cart-up">
-				<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 			width="66px" height="66px" viewBox="0 0 66 66" enable-background="new 0 0 66 66" xml:space="preserve">
 				<circle fill="#63A63E" cx="33" cy="33" r="33"/>
 				<path fill="#FFFFFF" d="M49.641,21.066c-0.389-0.389-1.025-0.389-1.414,0L29.788,39.504c-0.389,0.389-1.025,0.389-1.414,0
