@@ -1672,6 +1672,13 @@ body {
 	border-color: #ee3643;
 }
 
+.perforator-blue {
+	background-color: #f2f6f8;
+	padding-bottom: 86px;
+	padding-top: 60px;
+	margin-top: 80px;
+}
+
 .perforator-info h3 {
 	padding: 0;
 	margin: 0;
@@ -1681,7 +1688,6 @@ body {
 	font-weight: normal;
 	font-style: normal;
 	color: #000000;
-	margin-top: 123px;
 	margin-bottom: 23px;
 }
 
@@ -2638,6 +2644,12 @@ body {
 .main-footer-top {
 	background-color: #32425c;
 	padding-bottom: 50px;
+	margin-top: 86px;
+}
+
+.main-footer-top-catalog {
+	background-color: #32425c;
+	padding-bottom: 50px;
 }
 
 .main-footer-top-content {
@@ -2645,7 +2657,6 @@ body {
 	align-items: flex-start;
 	margin: auto;
 	max-width: 940px;
-	margin-top: 86px;
 }
 
 .main-footer-top-left {
